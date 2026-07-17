@@ -1,72 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Terms of Service | GEC Khagaria (Beta Version)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      line-height: 1.6;
-      color: #333;
-    }
-    h1, h2 {
-      color: #0a3d62;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      text-align: center;
-      color: #666;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Terms of Service | Codrex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Terms of Service for Codrex — AI-Powered College Learning Platform.">
+<meta name="theme-color" content="#0f172a">
+<style>
+  :root {
+    --navy: #0f172a;
+    --navy-light: #1e293b;
+    --accent: #3b82f6;
+    --accent-light: #60a5fa;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --bg-page: #f8fafc;
+    --bg-card: #ffffff;
+    --border: #e2e8f0;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-page);
+    color: var(--text-body);
+    line-height: 1.7;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: #fff;
+    padding: 64px 24px 56px;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  }
+
+  .hero h1 {
+    margin: 0 0 10px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .hero p.subtitle {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+  }
+
+  .hero p.updated {
+    margin-top: 18px;
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: #e2e8f0;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: -36px auto 60px;
+    padding: 0 24px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+    padding: 48px 52px;
+  }
+
+  .intro {
+    font-size: 1.02rem;
+    color: var(--text-body);
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h2 {
+    color: var(--navy);
+    font-size: 1.25rem;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  p {
+    color: var(--text-body);
+    margin: 0 0 12px;
+  }
+
+  ul {
+    margin: 8px 0 16px;
+    padding-left: 22px;
+  }
+
+  li {
+    margin-bottom: 6px;
+    color: var(--text-body);
+  }
+
+  .contact-box {
+    margin-top: 36px;
+    background: #f1f5f9;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+  }
+
+  .contact-box p {
+    margin: 4px 0;
+  }
+
+  .contact-box a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-box a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px 48px;
+    color: var(--text-muted);
+    font-size: 13.5px;
+  }
+
+  footer .links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  footer .links a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  footer .divider {
+    margin: 14px 0;
+    color: var(--border);
+  }
+
+  @media (max-width: 640px) {
+    .hero { padding: 48px 20px 44px; }
+    .hero h1 { font-size: 1.9rem; }
+    .card { padding: 32px 24px; }
+    h2 { font-size: 1.1rem; }
+  }
+</style>
 </head>
 <body>
 
-  <h1>Terms of Service</h1>
-  <p><strong>© 2026 GEC Khagaria (Beta Version). All rights reserved.</strong></p>
+  <div class="hero">
+    <img src="https://res.cloudinary.com/dyerivumo/image/upload/f_auto,q_auto,w_1200/v1778941250/Coderex-logo_svp4vc.png" alt="Codrex Logo">
+    <h1>Terms of Service</h1>
+    <p class="subtitle">Codrex — AI-Powered College Learning Platform</p>
+    <p class="updated">Last updated: July 2026</p>
+  </div>
 
-  <p>
-    By accessing or using our website, app, or services, you agree to these Terms of Service.
-  </p>
+  <div class="container">
+    <div class="card">
 
-  <h2>Use of Content</h2>
-  <p>
-    All content provided is for educational and informational purposes only. 
-    Unauthorized copying or redistribution is prohibited.
-  </p>
+      <p class="intro">
+        Welcome to Codrex. These Terms of Service ("Terms") govern your access to and use of the Codrex
+        website, mobile app, and related services (collectively, the "Service"). By accessing or using
+        the Service, you agree to be bound by these Terms. If you do not agree, please do not use the Service.
+      </p>
 
-  <h2>User Responsibilities</h2>
-  <p>
-    Users agree not to misuse the service or attempt to harm the system or other users.
-  </p>
+      <h2><span class="num">1</span>Use of Content</h2>
+      <p>
+        All quizzes, past year questions, study materials, and other content provided through Codrex are
+        intended solely for educational and informational purposes. Unauthorized copying, redistribution,
+        or commercial use of this content without prior written permission is strictly prohibited.
+      </p>
 
-  <h2>Intellectual Property</h2>
-  <p>
-    All content, logos, and materials are the property of GEC Khagaria (Beta Version) unless otherwise stated.
-  </p>
+      <h2><span class="num">2</span>User Responsibilities</h2>
+      <p>By using Codrex, you agree that you will not:</p>
+      <ul>
+        <li>Misuse the Service or attempt to disrupt, harm, or gain unauthorized access to our systems.</li>
+        <li>Share your account credentials or impersonate another user.</li>
+        <li>Upload or distribute content that is unlawful, misleading, or infringes on others' rights.</li>
+        <li>Use automated tools to scrape or extract data from the platform without permission.</li>
+      </ul>
 
-  <h2>Limitation of Liability</h2>
-  <p>
-    We are not responsible for any damages resulting from the use of our services.
-  </p>
+      <h2><span class="num">3</span>Intellectual Property</h2>
+      <p>
+        The Codrex name, logo, design, software, and all associated content are the property of Codrex
+        unless otherwise stated. No part of the Service may be reproduced, modified, or distributed without
+        our prior written consent.
+      </p>
 
-  <h2>Termination</h2>
-  <p>
-    We reserve the right to suspend or terminate access if these terms are violated.
-  </p>
+      <h2><span class="num">4</span>Account &amp; Access</h2>
+      <p>
+        You are responsible for maintaining the confidentiality of your account information and for all
+        activity that occurs under your account. Please notify us immediately of any unauthorized use of
+        your account.
+      </p>
 
-  <h2>Changes to Terms</h2>
-  <p>
-    We may modify these Terms at any time. Continued use of the service indicates acceptance of the updated terms.
-  </p>
+      <h2><span class="num">5</span>Limitation of Liability</h2>
+      <p>
+        Codrex is provided on an "as is" and "as available" basis. We make reasonable efforts to keep the
+        Service accurate and available, but we are not liable for any direct, indirect, or incidental
+        damages arising from your use of, or inability to use, the Service.
+      </p>
+
+      <h2><span class="num">6</span>Termination</h2>
+      <p>
+        We reserve the right to suspend or terminate your access to the Service, without prior notice, if
+        you violate these Terms or engage in conduct we determine to be harmful to the platform or its users.
+      </p>
+
+      <h2><span class="num">7</span>Changes to These Terms</h2>
+      <p>
+        We may update these Terms from time to time to reflect changes in our practices or for legal
+        reasons. Continued use of the Service after any changes take effect constitutes your acceptance of
+        the updated Terms.
+      </p>
+
+      <div class="contact-box">
+        <p><strong>Questions about these Terms?</strong></p>
+        <p>Reach out to us and we'll be happy to help.</p>
+        <p><a href="https://codrexweb.vercel.app/">codrexweb.vercel.app</a></p>
+      </div>
+
+    </div>
+  </div>
 
   <footer>
-    Privacy Policy | Terms of Service | Code of Conduct<br>
-    © 2026 GEC Khagaria (Beta Version). All rights reserved.
+    <div class="links">
+      <a href="#">Privacy Policy</a>|
+      <a href="#">Terms of Service</a>|
+      <a href="#">Code of Conduct</a>
+    </div>
+    <div class="divider">— · —</div>
+    © 2026 Codrex. All rights reserved.
   </footer>
 
 </body>
