@@ -1,86 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy | GEC Khagaria (Beta Version)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      line-height: 1.6;
-      color: #333;
-    }
-    h1, h2 {
-      color: #0a3d62;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      text-align: center;
-      color: #666;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Privacy Policy | Codrex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Privacy Policy for Codrex — AI-Powered College Learning Platform.">
+<meta name="theme-color" content="#0f172a">
+<style>
+  :root {
+    --navy: #0f172a;
+    --navy-light: #1e293b;
+    --accent: #3b82f6;
+    --accent-light: #60a5fa;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --bg-page: #f8fafc;
+    --bg-card: #ffffff;
+    --border: #e2e8f0;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-page);
+    color: var(--text-body);
+    line-height: 1.7;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: #fff;
+    padding: 64px 24px 56px;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  }
+
+  .hero h1 {
+    margin: 0 0 10px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .hero p.subtitle {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+  }
+
+  .hero p.updated {
+    margin-top: 18px;
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: #e2e8f0;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: -36px auto 60px;
+    padding: 0 24px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+    padding: 48px 52px;
+  }
+
+  .intro {
+    font-size: 1.02rem;
+    color: var(--text-body);
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h2 {
+    color: var(--navy);
+    font-size: 1.25rem;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  p {
+    color: var(--text-body);
+    margin: 0 0 12px;
+  }
+
+  ul {
+    margin: 8px 0 16px;
+    padding-left: 22px;
+  }
+
+  li {
+    margin-bottom: 6px;
+    color: var(--text-body);
+  }
+
+  .contact-box {
+    margin-top: 36px;
+    background: #f1f5f9;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+  }
+
+  .contact-box p {
+    margin: 4px 0;
+  }
+
+  .contact-box a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-box a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px 48px;
+    color: var(--text-muted);
+    font-size: 13.5px;
+  }
+
+  footer .links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  footer .links a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  footer .divider {
+    margin: 14px 0;
+    color: var(--border);
+  }
+
+  @media (max-width: 640px) {
+    .hero { padding: 48px 20px 44px; }
+    .hero h1 { font-size: 1.9rem; }
+    .card { padding: 32px 24px; }
+    h2 { font-size: 1.1rem; }
+  }
+</style>
 </head>
 <body>
 
-  <h1>Privacy Policy</h1>
-  <p><strong>© 2026 GEC Khagaria (Beta Version). All rights reserved.</strong></p>
+  <div class="hero">
+    <img src="https://res.cloudinary.com/dyerivumo/image/upload/f_auto,q_auto,w_1200/v1778941250/Coderex-logo_svp4vc.png" alt="Codrex Logo">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Codrex — AI-Powered College Learning Platform</p>
+    <p class="updated">Last updated: July 2026</p>
+  </div>
 
-  <p>
-    GEC Khagaria (Beta Version) ("we", "our", or "us") respects your privacy.
-    This Privacy Policy explains how we collect, use, and protect your information.
-  </p>
+  <div class="container">
+    <div class="card">
 
-  <h2>Information We Collect</h2>
-  <ul>
-    <li>Personal information (such as name or email) if you voluntarily provide it</li>
-    <li>Usage data such as pages visited and time spent on the site</li>
-    <li>Cookies and similar tracking technologies</li>
-  </ul>
+      <p class="intro">
+        Codrex ("we", "our", or "us") respects your privacy. This Privacy Policy explains how we collect,
+        use, and protect your information when you access or use the Codrex website, mobile app, and
+        related services (collectively, the "Service").
+      </p>
 
-  <h2>How We Use Information</h2>
-  <ul>
-    <li>Improve our services and content</li>
-    <li>Respond to user inquiries</li>
-    <li>Maintain security and performance</li>
-  </ul>
+      <h2><span class="num">1</span>Information We Collect</h2>
+      <ul>
+        <li>Personal information (such as name or email) if you voluntarily provide it, for example when creating an account.</li>
+        <li>Usage data such as pages visited, quizzes attempted, and time spent on the platform.</li>
+        <li>Device and log information, including browser type and IP address.</li>
+        <li>Cookies and similar tracking technologies.</li>
+      </ul>
 
-  <h2>Cookies</h2>
-  <p>
-    Cookies are used to enhance user experience.
-    You can disable cookies through your browser settings.
-  </p>
+      <h2><span class="num">2</span>How We Use Information</h2>
+      <ul>
+        <li>Improve our services, content, and learning tools.</li>
+        <li>Personalize your experience, such as quiz recommendations and progress tracking.</li>
+        <li>Respond to user inquiries and provide support.</li>
+        <li>Maintain the security, integrity, and performance of the platform.</li>
+      </ul>
 
-  <h2>Data Security</h2>
-  <p>
-    We take reasonable steps to protect your data,
-    but no method of transmission over the internet is 100% secure.
-  </p>
+      <h2><span class="num">3</span>Cookies</h2>
+      <p>
+        We use cookies to enhance your experience on Codrex, such as keeping you signed in and
+        remembering your preferences. You can disable cookies at any time through your browser settings,
+        though some features of the Service may not function properly as a result.
+      </p>
 
-  <h2>Third-Party Services</h2>
-  <p>
-    We may use third-party services that collect information according
-    to their own privacy policies.
-  </p>
+      <h2><span class="num">4</span>Data Security</h2>
+      <p>
+        We take reasonable technical and organizational measures to protect your data. However, no method
+        of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee
+        absolute security.
+      </p>
 
-  <h2>Changes to This Policy</h2>
-  <p>
-    We may update this Privacy Policy from time to time.
-    Changes will be posted on this page.
-  </p>
+      <h2><span class="num">5</span>Third-Party Services</h2>
+      <p>
+        Codrex may use third-party services (such as analytics or hosting providers) that collect
+        information according to their own privacy policies. We encourage you to review those policies
+        where applicable.
+      </p>
 
-  <h2>Contact Us</h2>
-  <p>
-    If you have any questions about this Privacy Policy,
-    please contact us.
-  </p>
+      <h2><span class="num">6</span>Data Retention</h2>
+      <p>
+        We retain personal information for as long as necessary to provide the Service and fulfill the
+        purposes described in this Policy, unless a longer retention period is required by law.
+      </p>
+
+      <h2><span class="num">7</span>Your Choices</h2>
+      <p>
+        You may update or delete certain account information at any time by contacting us. You may also
+        request that we limit how we use your personal data, subject to applicable legal requirements.
+      </p>
+
+      <h2><span class="num">8</span>Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect changes in our practices or for
+        legal reasons. Changes will be posted on this page, along with an updated revision date.
+      </p>
+
+      <div class="contact-box">
+        <p><strong>Questions about this Privacy Policy?</strong></p>
+        <p>Reach out to us and we'll be happy to help.</p>
+        <p><a href="https://codrexweb.vercel.app/">codrexweb.vercel.app</a></p>
+      </div>
+
+    </div>
+  </div>
 
   <footer>
-    Privacy Policy | Terms of Service | Cookie Policy<br>
-    © 2026 GEC Khagaria (Beta Version). All rights reserved.
+    <div class="links">
+      <a href="#">Privacy Policy</a>|
+      <a href="#">Terms of Service</a>|
+      <a href="#">Cookie Policy</a>
+    </div>
+    <div class="divider">— · —</div>
+    © 2026 Codrex. All rights reserved.
   </footer>
 
 </body>
