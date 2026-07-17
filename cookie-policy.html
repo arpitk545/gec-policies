@@ -1,63 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Cookie Policy | GEC Khagaria (Beta Version)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      line-height: 1.6;
-      color: #333;
-    }
-    h1, h2 {
-      color: #0a3d62;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      text-align: center;
-      color: #666;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Cookie Policy | Codrex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cookie Policy for Codrex — AI-Powered College Learning Platform.">
+<meta name="theme-color" content="#0f172a">
+<style>
+  :root {
+    --navy: #0f172a;
+    --navy-light: #1e293b;
+    --accent: #3b82f6;
+    --accent-light: #60a5fa;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --bg-page: #f8fafc;
+    --bg-card: #ffffff;
+    --border: #e2e8f0;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-page);
+    color: var(--text-body);
+    line-height: 1.7;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: #fff;
+    padding: 64px 24px 56px;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  }
+
+  .hero h1 {
+    margin: 0 0 10px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .hero p.subtitle {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+  }
+
+  .hero p.updated {
+    margin-top: 18px;
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: #e2e8f0;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: -36px auto 60px;
+    padding: 0 24px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+    padding: 48px 52px;
+  }
+
+  .intro {
+    font-size: 1.02rem;
+    color: var(--text-body);
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h2 {
+    color: var(--navy);
+    font-size: 1.25rem;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  p {
+    color: var(--text-body);
+    margin: 0 0 12px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px;
+    font-size: 0.92rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    color: var(--navy);
+    background: #f1f5f9;
+    font-weight: 600;
+  }
+
+  td {
+    color: var(--text-body);
+  }
+
+  ul {
+    margin: 8px 0 16px;
+    padding-left: 22px;
+  }
+
+  li {
+    margin-bottom: 6px;
+    color: var(--text-body);
+  }
+
+  .contact-box {
+    margin-top: 36px;
+    background: #f1f5f9;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+  }
+
+  .contact-box p {
+    margin: 4px 0;
+  }
+
+  .contact-box a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-box a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px 48px;
+    color: var(--text-muted);
+    font-size: 13.5px;
+  }
+
+  footer .links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  footer .links a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  footer .divider {
+    margin: 14px 0;
+    color: var(--border);
+  }
+
+  @media (max-width: 640px) {
+    .hero { padding: 48px 20px 44px; }
+    .hero h1 { font-size: 1.9rem; }
+    .card { padding: 32px 24px; }
+    h2 { font-size: 1.1rem; }
+    table { font-size: 0.85rem; }
+    th, td { padding: 8px 10px; }
+  }
+</style>
 </head>
 <body>
 
-  <h1>Cookie Policy</h1>
-  <p><strong>© 2026 GEC Khagaria (Beta Version). All rights reserved.</strong></p>
+  <div class="hero">
+    <img src="https://res.cloudinary.com/dyerivumo/image/upload/f_auto,q_auto,w_1200/v1778941250/Coderex-logo_svp4vc.png" alt="Codrex Logo">
+    <h1>Cookie Policy</h1>
+    <p class="subtitle">Codrex — AI-Powered College Learning Platform</p>
+    <p class="updated">Last updated: July 2026</p>
+  </div>
 
-  <p>
-    This Cookie Policy explains how cookies are used on our platform.
-  </p>
+  <div class="container">
+    <div class="card">
 
-  <h2>What Are Cookies</h2>
-  <p>
-    Cookies are small text files stored on your device to improve user experience.
-  </p>
+      <p class="intro">
+        This Cookie Policy explains how Codrex uses cookies and similar tracking technologies when you
+        visit our website or use our app (collectively, the "Service").
+      </p>
 
-  <h2>How We Use Cookies</h2>
-  <ul>
-    <li>Understand user behavior</li>
-    <li>Improve website performance</li>
-    <li>Remember user preferences</li>
-  </ul>
+      <h2><span class="num">1</span>What Are Cookies</h2>
+      <p>
+        Cookies are small text files stored on your device by your browser. They help the Service
+        function properly, remember your preferences, and improve your overall experience.
+      </p>
 
-  <h2>Managing Cookies</h2>
-  <p>
-    You can control or disable cookies through your browser settings.
-  </p>
+      <h2><span class="num">2</span>How We Use Cookies</h2>
+      <ul>
+        <li>Keep you signed in and remember your session</li>
+        <li>Understand how users interact with the platform</li>
+        <li>Improve website performance and reliability</li>
+        <li>Remember user preferences, such as display settings</li>
+      </ul>
 
-  <h2>Changes to This Policy</h2>
-  <p>
-    This Cookie Policy may be updated from time to time.
-  </p>
+      <h2><span class="num">3</span>Types of Cookies We Use</h2>
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Purpose</th>
+        </tr>
+        <tr>
+          <td>Essential</td>
+          <td>Required for core functionality, such as login and security</td>
+        </tr>
+        <tr>
+          <td>Performance</td>
+          <td>Help us understand usage patterns to improve the Service</td>
+        </tr>
+        <tr>
+          <td>Preference</td>
+          <td>Remember your settings and choices across visits</td>
+        </tr>
+      </table>
+
+      <h2><span class="num">4</span>Managing Cookies</h2>
+      <p>
+        You can control or disable cookies at any time through your browser settings. Please note that
+        disabling certain cookies may affect the functionality and performance of the Service.
+      </p>
+
+      <h2><span class="num">5</span>Changes to This Policy</h2>
+      <p>
+        We may update this Cookie Policy from time to time to reflect changes in our practices. Any
+        updates will be posted on this page, along with a revised date.
+      </p>
+
+      <div class="contact-box">
+        <p><strong>Questions about our use of cookies?</strong></p>
+        <p>Reach out to us and we'll be happy to help.</p>
+        <p><a href="https://codrexweb.vercel.app/">codrexweb.vercel.app</a></p>
+      </div>
+
+    </div>
+  </div>
 
   <footer>
-    Privacy Policy | Terms of Service | Cookie Policy<br>
-    © 2026 GEC Khagaria (Beta Version). All rights reserved.
+    <div class="links">
+      <a href="#">Privacy Policy</a>|
+      <a href="#">Terms of Service</a>|
+      <a href="#">Cookie Policy</a>
+    </div>
+    <div class="divider">— · —</div>
+    © 2026 Codrex. All rights reserved.
   </footer>
 
 </body>
