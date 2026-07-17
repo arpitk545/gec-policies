@@ -1,61 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Data Protection | GEC Khagaria (Beta Version)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      line-height: 1.6;
-      color: #333;
-    }
-    h1, h2 {
-      color: #0a3d62;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      text-align: center;
-      color: #666;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Data Protection | Codrex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Data Protection Policy for Codrex — AI-Powered College Learning Platform.">
+<meta name="theme-color" content="#0f172a">
+<style>
+  :root {
+    --navy: #0f172a;
+    --navy-light: #1e293b;
+    --accent: #3b82f6;
+    --accent-light: #60a5fa;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --bg-page: #f8fafc;
+    --bg-card: #ffffff;
+    --border: #e2e8f0;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-page);
+    color: var(--text-body);
+    line-height: 1.7;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: #fff;
+    padding: 64px 24px 56px;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  }
+
+  .hero h1 {
+    margin: 0 0 10px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .hero p.subtitle {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+  }
+
+  .hero p.updated {
+    margin-top: 18px;
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: #e2e8f0;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: -36px auto 60px;
+    padding: 0 24px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+    padding: 48px 52px;
+  }
+
+  .intro {
+    font-size: 1.02rem;
+    color: var(--text-body);
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  h2 {
+    color: var(--navy);
+    font-size: 1.25rem;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  p {
+    color: var(--text-body);
+    margin: 0 0 12px;
+  }
+
+  ul {
+    margin: 8px 0 16px;
+    padding-left: 22px;
+  }
+
+  li {
+    margin-bottom: 6px;
+    color: var(--text-body);
+  }
+
+  .contact-box {
+    margin-top: 36px;
+    background: #f1f5f9;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+  }
+
+  .contact-box p {
+    margin: 4px 0;
+  }
+
+  .contact-box a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-box a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px 48px;
+    color: var(--text-muted);
+    font-size: 13.5px;
+  }
+
+  footer .links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  footer .links a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  footer .divider {
+    margin: 14px 0;
+    color: var(--border);
+  }
+
+  @media (max-width: 640px) {
+    .hero { padding: 48px 20px 44px; }
+    .hero h1 { font-size: 1.9rem; }
+    .card { padding: 32px 24px; }
+    h2 { font-size: 1.1rem; }
+  }
+</style>
 </head>
 <body>
 
-  <h1>Data Protection</h1>
-  <p><strong>© 2026 GEC Khagaria (Beta Version). All rights reserved.</strong></p>
+  <div class="hero">
+    <img src="https://res.cloudinary.com/dyerivumo/image/upload/f_auto,q_auto,w_1200/v1778941250/Coderex-logo_svp4vc.png" alt="Codrex Logo">
+    <h1>Data Protection</h1>
+    <p class="subtitle">Codrex — AI-Powered College Learning Platform</p>
+    <p class="updated">Last updated: July 2026</p>
+  </div>
 
-  <p>
-    We are committed to protecting user data and ensuring responsible data handling.
-  </p>
+  <div class="container">
+    <div class="card">
 
-  <h2>Data Storage</h2>
-  <p>
-    Data is stored securely and accessed only when necessary.
-  </p>
+      <p class="intro">
+        Codrex is committed to protecting user data and ensuring responsible, transparent data handling
+        across our website, mobile app, and related services (collectively, the "Service").
+      </p>
 
-  <h2>Data Sharing</h2>
-  <p>
-    We do not sell or misuse user data. Data may be shared only when legally required.
-  </p>
+      <h2><span class="num">1</span>Data Storage</h2>
+      <p>
+        User data is stored securely using industry-standard safeguards and is accessed only when
+        necessary to operate, maintain, or improve the Service.
+      </p>
 
-  <h2>User Rights</h2>
-  <p>
-    Users have the right to request access, correction, or deletion of their data.
-  </p>
+      <h2><span class="num">2</span>Data Sharing</h2>
+      <p>
+        We do not sell or misuse user data. Data may be shared with third parties only where necessary to
+        operate the Service (such as hosting or analytics providers) or where required by law.
+      </p>
 
-  <h2>Compliance</h2>
-  <p>
-    We follow basic data protection principles to ensure fairness, transparency, and security.
-  </p>
+      <h2><span class="num">3</span>Data Minimization</h2>
+      <p>
+        We collect only the information reasonably needed to provide and improve Codrex, and avoid
+        retaining data beyond what is necessary for that purpose.
+      </p>
+
+      <h2><span class="num">4</span>User Rights</h2>
+      <p>Users have the right to:</p>
+      <ul>
+        <li>Request access to the personal data we hold about them.</li>
+        <li>Request correction of inaccurate or incomplete data.</li>
+        <li>Request deletion of their personal data, subject to applicable legal requirements.</li>
+      </ul>
+
+      <h2><span class="num">5</span>Compliance</h2>
+      <p>
+        We follow basic data protection principles — fairness, transparency, purpose limitation, and
+        security — in how we collect, store, and process user data.
+      </p>
+
+      <div class="contact-box">
+        <p><strong>Questions about data protection?</strong></p>
+        <p>Reach out to us and we'll be happy to help.</p>
+        <p><a href="https://codrexweb.vercel.app/">codrexweb.vercel.app</a></p>
+      </div>
+
+    </div>
+  </div>
 
   <footer>
-    Privacy Policy | Terms of Service | Data Protection<br>
-    © 2026 GEC Khagaria (Beta Version). All rights reserved.
+    <div class="links">
+      <a href="#">Privacy Policy</a>|
+      <a href="#">Terms of Service</a>|
+      <a href="#">Data Protection</a>
+    </div>
+    <div class="divider">— · —</div>
+    © 2026 Codrex. All rights reserved.
   </footer>
 
 </body>
